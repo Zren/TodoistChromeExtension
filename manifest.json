@@ -1,0 +1,25 @@
+{
+    "name": "Todoist Shortcuts",
+    "description": "",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": [
+        "tabs",
+        "*://todoist.com/*"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "commands": {
+        "new-task": {
+            "suggested_key": {
+                "default": "Ctrl+Q",
+                "mac": "Command+Q"
+            },
+            "description": "Create a new task"
+        }
+    }
+}
